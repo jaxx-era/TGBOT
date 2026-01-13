@@ -1,4 +1,4 @@
 pyTelegramBotAPI
-dotenv
+python.dotenv
 schedule
 requests
