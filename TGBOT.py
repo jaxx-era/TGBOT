@@ -5,7 +5,8 @@ import threading
 import time
 import random
 
-API_TOKEN = os.getenv("API_TOKEN")
+API_TOKEN = 
+os.getenv("API_TOKEN")
 bot = telebot.TeleBot(API_TOKEN)
 
 messages = [
@@ -50,7 +51,8 @@ def send_welcome(message):
 @bot.callback_query_handler(func=lambda call: True)
 def handle_query(call):
     if call.data == "script":
-        bot.send_message(call.message.chat.id, "Ye file paid hai. Agar chahiye toh @x091mph ko 'BOT SCRIPT' bhejein.")
+        bot.send_message(call.message.chat.id, "Ye file paid hai.
+        Bot ki script and instructions (@x091mph) owner ke pass milegi")
     elif call.data == "owner":
         bot.send_message(call.message.chat.id, "Here is owner TG I'D: @x091mph")
     elif call.data == "youtube":
