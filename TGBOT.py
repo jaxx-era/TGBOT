@@ -26,7 +26,7 @@ messages = [
 def send_periodic_messages(chat_id):
     i = 0
     while True:
-        time.sleep(600)  # 10 minutes
+        time.sleep(7200)  # 2 hours 
         bot.send_message(chat_id, messages[i % len(messages)])
         i += 1
 
@@ -52,10 +52,10 @@ def handle_query(call):
     if call.data == "script":
         bot.send_message(call.message.chat.id, "Ye file paid hai. Agar chahiye toh @x091mph ko 'BOT SCRIPT' bhejein.")
     elif call.data == "owner":
-        bot.send_message(call.message.chat.id, "Here is your number: @x091mph")
+        bot.send_message(call.message.chat.id, "Here is owner TG I'D: @x091mph")
     elif call.data == "youtube":
-        bot.send_message(call.message.chat.id, "Here is your link: https://youtube.com/@soloerajaxx")
+        bot.send_message(call.message.chat.id, "Here is your YT link: https://youtube.com/@soloerajaxx")
     elif call.data == "community":
-        bot.send_message(call.message.chat.id, "Here is your link: https://t.me/addlist/RsIEcoIRNyM3MzY1")
+        bot.send_message(call.message.chat.id, "Here is your TG link: https://t.me/addlist/RsIEcoIRNyM3MzY1")
 
 bot.infinity_polling()
